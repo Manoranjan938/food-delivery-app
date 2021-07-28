@@ -1,0 +1,27 @@
+.filter-container{
+    margin-top: 25px;
+    margin-left: 10px;
+
+    .filter-wrapper{
+        display: flex;
+
+        .filter-item{
+            margin-right: 15px;
+            border: 1px solid #b2b2b2;
+            padding: 8px 18px;
+            border-radius: 10px;
+            color: #b2b2b2;
+
+            &:hover{
+                cursor: pointer;
+                background: #efefef;
+            }
+
+            input{
+                cursor: pointer;
+                opacity: 0;
+                display: none;
+            }
+        }
+    }
+}

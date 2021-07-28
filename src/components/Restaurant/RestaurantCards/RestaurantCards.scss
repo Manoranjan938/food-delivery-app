@@ -1,0 +1,9 @@
+.restaurant-container{
+    display: flex;
+
+    .restaurant-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px;
+    }
+}

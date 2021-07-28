@@ -1,0 +1,51 @@
+.type-container {
+  width: 100%;
+  height: auto;
+
+  .type-wrapper {
+    display: flex !important;
+
+    .nav {
+      display: flex;
+      margin-left: 10px;
+      margin-right: 20px;
+      padding: 1rem 0.5rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .icon {
+        font-size: 34px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #efefef;
+
+        i {
+          margin: 10px;
+        }
+      }
+
+      span {
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto 10px;
+        color: #919191;
+      }
+    }
+
+    .active-type {
+      color: #a42af4!important;
+      border-bottom: 2px solid #a42af4;
+
+      .icon {
+        background: #eed7fd;
+      }
+
+      span {
+        color: #a42af4;
+      }
+    }
+  }
+}
