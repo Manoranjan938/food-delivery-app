@@ -36,6 +36,26 @@ const RestaurantBioHeader = () => {
                 <p className="sub-texts">Costs for two</p>
               </div>
             </div>
+
+            <div className="header-content-bottom">
+              <div className="bottom-contents">
+                <div className="search_box">
+                  <i className="fa fa-search"></i>
+                  <input
+                    type="text"
+                    name=""
+                    placeholder="Search for dishes..."
+                  />
+                </div>
+                <div className="veg_box">
+                  <input type="checkbox" name="" id="" />
+                  &nbsp;Veg Only
+                </div>
+                <div className="favorite_box">
+                  <i class="fa fa-heart-o"></i>&nbsp;Favourite
+                </div>
+              </div>
+            </div>
           </div>
           <div className="restaurant-offer">
             <div className="offers">
