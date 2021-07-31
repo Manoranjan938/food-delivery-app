@@ -1,11 +1,15 @@
 import React from 'react'
 
+import './foodType.scss'
+
 const FoodTypes = () => {
     return (
-        <>
-            <h1>Food Types Component</h1>
-        </>
-    )
+      <>
+        <div className="food_type_container">
+          <h1>Food Types Component</h1>
+        </div>
+      </>
+    );
 }
 
 export default FoodTypes

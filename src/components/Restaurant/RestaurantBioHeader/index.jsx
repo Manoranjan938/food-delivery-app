@@ -52,7 +52,7 @@ const RestaurantBioHeader = () => {
                   &nbsp;Veg Only
                 </div>
                 <div className="favorite_box">
-                  <i class="fa fa-heart-o"></i>&nbsp;Favourite
+                  <i className="fa fa-heart-o"></i>&nbsp;Favourite
                 </div>
               </div>
             </div>
