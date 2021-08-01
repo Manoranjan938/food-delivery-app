@@ -1,0 +1,196 @@
+.overview_container {
+  margin-top: 30px;
+
+  .overview_wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+
+    .content_section {
+      h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        margin: 0;
+      }
+
+      .restaurant_safety_section {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        .safety_section {
+          display: flex;
+          gap: 6px;
+          padding: 10px 5px;
+          border-radius: 10px;
+          box-shadow: 1px 1px 5px #b2b2b2;
+
+          .image {
+            width: 45px;
+            height: 45px;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .content{
+            span{
+                text-transform: uppercase;
+                font-size: 12px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #b3b3b3;
+                
+            }
+
+            p{
+                margin: 5px 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+          }
+        }
+      }
+
+      .cuisines{
+        margin-top: 20px;
+
+        h3{
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 500;
+          font-size: 22px;
+          margin: 0;
+        }
+
+        .items{
+          margin: 10px 0;
+
+          span{
+            border: 1px solid #b3b3b3;
+            margin-right: 10px;
+            padding: 6px 12px;
+            border-radius: 50px;
+            color: #a42af4;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+        }
+      }
+
+      .more_info{
+        margin-top: 40px;
+
+        h3{
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 500;
+          margin: 0;
+        }
+      }
+
+      .blogger{
+        margin-top: 40px;
+        background: #e5e5e5;
+        padding: 1rem 1.2rem;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        .texts{
+          h1{
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+          }
+
+          span{
+            display: flex;
+            color: #a42af4;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+        }
+
+        .blog_btn{
+          margin: auto 2px;
+
+          button{
+            height: 40px;
+            padding: 6px 10px;
+            font-size: 14px;
+            border-radius: 10px;
+            border: 1px solid #a42af4;
+            background: #a42af4;
+            color: #fff;
+            font-weight: 12px;
+          }
+        }
+      }
+    }
+
+    .map_direction_section{
+      position: sticky;
+      width: 100%;
+      height: fit-content;
+      border: 1px solid #efefef;
+      border-radius: 10px;
+      padding: 15px 10px;
+      box-shadow: 1px 1px 10px #e5e5e5;
+
+      .call_section{
+        padding: 0 6px;
+
+        h2{
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 500;
+        }
+
+        span{
+          font-family: Arial, Helvetica, sans-serif;
+          margin-top: 20px!important;
+          color: #a42af4;
+        }
+      }
+
+      .direction_section{
+        padding: 0 6px;
+        margin-top: 14px;
+
+        h2{
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 500;
+        }
+
+        p{
+          margin-top: 16px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      }
+
+      .btns{
+        padding: 10px 6px;
+
+        button{
+          margin-right: 10px;
+          height: 40px;
+          padding: 10px 12px;
+          font-size: 14px;
+          background: none;
+          outline: none;
+          border: 1px solid #b2b2b2;
+          border-radius: 10px;
+
+          i{
+            color: #a42af4;
+          }
+
+          &:hover{
+            background: #e5e5e5;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
