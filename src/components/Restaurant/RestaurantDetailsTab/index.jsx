@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import FoodSection from '../FoodSection';
 import OverviewSection from '../OverviewSection'
+import ReviewSection from '../Review';
 
 import './tabs.scss'
 
@@ -34,6 +35,7 @@ const RestaurantTabs = () => {
         <div className="food_section">
           {tabs === 1 && <OverviewSection />}
           {tabs === 2 && <FoodSection />}
+          {tabs === 3 && <ReviewSection />}
         </div>
       </>
     );
