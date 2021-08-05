@@ -13,39 +13,39 @@
       img {
         width: 80px;
         height: 80px;
-        object-fit: contain !important;
+        object-fit: cover;
       }
     }
 
-    .location{
-        width: 600px;
-        height: 50px;
-        display: flex;
-        padding-top: 10px;
+    .location {
+      width: 600px;
+      height: 50px;
+      display: flex;
+      padding-top: 10px;
 
-        input{
-            width: 100%;
-            border: 1px solid #efefef;
-            border-radius: 5px;
-            box-shadow: 1px 1px 5px #888888;
-            outline: none;
-            padding-left: 20px;
-        }
+      input {
+        width: 100%;
+        border: 1px solid #efefef;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px #888888;
+        outline: none;
+        padding-left: 20px;
+      }
     }
 
-    .links{
+    .links {
       display: flex;
       padding-top: 10px;
       height: 50px;
       gap: 10px;
 
-      button{
+      button {
         border: none;
         background: none;
         font-size: 18px;
         color: #888888;
 
-        &:hover{
+        &:hover {
           cursor: pointer;
         }
       }
