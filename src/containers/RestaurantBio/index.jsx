@@ -7,12 +7,12 @@ import './RestaurantBio.scss'
 
 const RestaurantBio = () => {
     return (
-        <>
-            <Header />
-            <RestaurantBioHeader />
-            <RestaurantTabs />
-        </>
-    )
+      <>
+        <Header />
+        <RestaurantBioHeader />
+        <RestaurantTabs />
+      </>
+    );
 }
 
 export default RestaurantBio

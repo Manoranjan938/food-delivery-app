@@ -1,9 +1,9 @@
 import React from 'react'
 import FoodTypes from '../FoodTypes'
 import Foods from '../Foods'
-import FoodCart from '../Cart'
 
 import './foodSection.scss'
+import FoodCarts from '../FoodTempCart'
 
 const FoodSection = () => {
     return (
@@ -11,7 +11,7 @@ const FoodSection = () => {
         <div className="food_section_container">
           <FoodTypes />
           <Foods />
-          <FoodCart />
+          <FoodCarts />
         </div>
       </>
     );

@@ -1,0 +1,48 @@
+.photos_container {
+  .photos_wrapper {
+    display: block;
+
+    .photos_header {
+      h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 10px 0;
+        font-weight: 500;
+      }
+    }
+
+    .photos_filter {
+      display: flex;
+      gap: 20px;
+
+      .tab_pop {
+        border: 1px solid #b3b3b3;
+        padding: 8px 14px;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #b3b3b3;
+        font-weight: 500;
+
+        &:hover {
+          cursor: pointer;
+          border: 1px solid #585656;
+          color: #585656;
+        }
+      }
+
+      .active {
+        padding: 8px 14px;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #b3b3b3;
+        font-weight: 500;
+        color: #fff;
+        background: #a42af4;
+
+        &:hover {
+          cursor: pointer;
+          background: #a318ff;
+        }
+      }
+    }
+  }
+}
