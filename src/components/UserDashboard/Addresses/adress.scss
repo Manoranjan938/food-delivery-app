@@ -1,0 +1,63 @@
+.address_container {
+  width: 100%;
+
+  .address_header {
+    margin: 10px 0;
+
+    h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+  }
+
+  .address_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 30px;
+    flex-wrap: wrap;
+
+    .address {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+      border: 1px solid #b3b3b3;
+      padding: 1rem;
+
+      .address_icon {
+        font-size: 26px;
+      }
+
+      .address_details {
+        margin: 0;
+
+        h4 {
+          margin: 0;
+          font-size: 22px;
+        }
+
+        p {
+          margin: 5px 0;
+          word-spacing: 5px;
+          font-size: 14px;
+          color: #999999;
+        }
+
+        .links {
+          margin-top: 15px;
+          display: flex;
+          gap: 20px;
+
+          span {
+            color: #a42af4;
+            font-weight: 600;
+            text-transform: uppercase;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

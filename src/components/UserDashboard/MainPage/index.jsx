@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import UserAddresses from '../Addresses';
 import OrderHistory from '../OrderHistory';
 
 import "./mainDashboard.scss";
@@ -63,7 +64,7 @@ const MainDashboardPage = () => {
                 className={sidebarMenu === 7 ? "active" : null}
                 onClick={() => handleActiveMenu(7)}
               >
-                My Adresses
+                My Addresses
               </li>
               <li
                 className={sidebarMenu === 8 ? "active" : null}
@@ -111,6 +112,7 @@ const MainDashboardPage = () => {
           </div>
           <div className="dashboard_content">
             {sidebarMenu === 6 && <OrderHistory />}
+            {sidebarMenu === 7 && <UserAddresses />}
           </div>
         </div>
       </>
