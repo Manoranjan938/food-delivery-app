@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import UserAddresses from '../Addresses';
 import OrderHistory from '../OrderHistory';
+import Transactions from '../Transactions';
 
 import "./mainDashboard.scss";
 
@@ -113,6 +114,7 @@ const MainDashboardPage = () => {
           <div className="dashboard_content">
             {sidebarMenu === 6 && <OrderHistory />}
             {sidebarMenu === 7 && <UserAddresses />}
+            {sidebarMenu === 12 && <Transactions />}
           </div>
         </div>
       </>
