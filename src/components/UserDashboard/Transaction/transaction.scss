@@ -1,0 +1,138 @@
+.payment_container {
+  background: #fff;
+  border-radius: 20px;
+  padding: 1rem;
+
+  .recipient_details {
+    display: flex;
+    gap: 15px;
+
+    .recipient_image {
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    .recipient_name {
+      width: 130px;
+
+      h2 {
+        margin: 10px 0 5px;
+        font-size: 18px;
+      }
+
+      span {
+        font-size: 13px;
+        color: #999999;
+      }
+    }
+
+    .recipt_option {
+      i {
+        color: #999999;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .recipient_contact_details {
+    display: flex;
+    gap: 10px;
+
+    .contact {
+      width: 60%;
+
+      h5 {
+        font-size: 11px;
+        font-weight: 500;
+        color: #999999;
+        margin: 5px;
+      }
+
+      .phone {
+        display: flex;
+        gap: 5px;
+
+        span {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          background: #a42af4;
+
+          i {
+            margin: 5px 6px;
+            color: #fff;
+            font-size: 16px;
+          }
+        }
+
+        p {
+          margin: 5px 0;
+          font-size: 12px;
+        }
+      }
+
+      .email{
+        display: flex;
+        gap: 5px;
+        margin-top: 10px;
+
+        span {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          background: #a42af4;
+
+          i {
+            margin: 5px 6px;
+            color: #fff;
+            font-size: 14px;
+          }
+        }
+
+        p {
+          margin: 5px 0;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .payment_date {
+      h5 {
+        font-size: 11px;
+        font-weight: 500;
+        color: #999999;
+        margin: 5px;
+      }
+
+      .date{
+        display: flex;
+        gap: 5px;
+
+        span {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          background: #a42af4;
+
+          i {
+            margin: 5px 6px;
+            color: #fff;
+            font-size: 14px;
+          }
+        }
+
+        p {
+          margin: 0;
+            font-size: 12px;
+        }
+      }
+    }
+  }
+}
