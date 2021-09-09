@@ -136,3 +136,29 @@
     }
   }
 }
+
+.menu_option{
+  display: none;
+}
+
+.active_menu_option{
+  position: absolute;
+  left: 40%;
+  width: 150px;
+  height: 110px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px #999999;
+
+  li{
+    width: 100%;
+    margin: 0 -40px;
+    padding: 10px 20px;
+    list-style: none;
+
+    &:hover{
+      background: #efefef;
+      cursor: pointer;
+    }
+  }
+}

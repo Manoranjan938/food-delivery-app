@@ -3,8 +3,20 @@ import React from 'react';
 import './transaction.scss';
 
 import image from 'Images/burgurking.jpg';
+import { useState } from 'react';
 
 const Transaction = () => {
+
+  const [openOption, setOpenOption] = useState(false);
+
+  const handleOpen = () => {
+    setOpenOption(!openOption);
+  }
+
+  const handleClose = () => {
+    handleOpen();
+  }
+
   return (
     <>
       <div className="payment_container">
@@ -16,7 +28,7 @@ const Transaction = () => {
             <h2>Burgur King</h2>
             <span>BTM, Bangalore</span>
           </div>
-          <div className="recipt_option">
+          <div className="recipt_option" onClick={handleOpen}>
             <i className="fa fa-ellipsis-h"></i>
           </div>
         </div>
@@ -46,6 +58,13 @@ const Transaction = () => {
             </div>
           </div>
         </div>
+      </div>
+      
+      <div className={openOption ?"active_menu_option" : "menu_option"}>
+        <ul>
+          <li onClick={handleClose}>Status</li>
+          <li onClick={handleClose}>View Details</li>
+        </ul>
       </div>
     </>
   );
