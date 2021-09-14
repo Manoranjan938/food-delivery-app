@@ -1,9 +1,12 @@
+import Header from 'components/Home/Header/Header'
+import CheckoutFood from 'components/Restaurant/Checkout'
 import React from 'react'
 
 const Checkout = () => {
     return (
         <>
-            <h1>Checkout Container</h1>
+            <Header />
+            <CheckoutFood />
         </>
     )
 }
