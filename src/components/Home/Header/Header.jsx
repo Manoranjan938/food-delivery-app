@@ -1,28 +1,19 @@
-import React from "react";
+import React from 'react';
 
-import "./header.scss";
+import './header.scss';
 
-import image from "../../../Images/logo.png";
-import { useState } from "react";
+import image from '../../../Images/logo.png';
+import { useState } from 'react';
 
-import SignIn from '../../SignIn'
-import SignUp from '../../SignUp'
+import SignIn from '../../SignIn';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
-
   const [signInPopUp, setSignInPopUp] = useState(false);
-  const [signUpPopUp, setSignUpPopUp] = useState(false);
 
-  const popUpModal = (value) => {
-    if(value === "Sign_In"){
-      console.log("Sign In Buttun Clicked")
-      setSignInPopUp(!signInPopUp);
-    }
-    else if(value === "Sign_Up"){
-      console.log("Sign Up button clicked")
-      setSignUpPopUp(!signUpPopUp);
-    }
-  }
+  const popUpModal = () => {
+    setSignInPopUp(!signInPopUp);
+  };
 
   return (
     <>
@@ -31,22 +22,28 @@ const Header = () => {
           <div className="logo">
             <img src={image} alt="" />
           </div>
-          <div className="location">
-            <input
-              type="text"
-              name=""
-              id=""
-              placeholder="Search for restaurant"
-            />
-          </div>
           <div className="links">
-            <button onClick={() => popUpModal('Sign_In')}>Log in</button>
-            <button onClick={() => popUpModal('Sign_Up')}>Sign up</button>
+            <Link to="#" className="nav_link">
+              Home
+            </Link>
+            <Link to="#" className="nav_link">
+              About
+            </Link>
+            <Link to="#" className="nav_link">
+              Restaurants
+            </Link>
+            <Link to="#" className="nav_link">
+              Foods
+            </Link>
+          </div>
+          <div className="icons">
+            <i className="fa fa-search"></i>
+            <i className="fa fa-shopping-cart"></i>
+            <i className="fa fa-sign-in" onClick={popUpModal}></i>
           </div>
         </div>
       </div>
       {signInPopUp && <SignIn show={signInPopUp} setShow={setSignInPopUp} />}
-      {signUpPopUp && <SignUp show={signUpPopUp} setShow={setSignUpPopUp} />}
     </>
   );
 };

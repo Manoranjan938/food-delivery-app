@@ -1,0 +1,66 @@
+h2{
+    margin: 0;
+}
+
+.review_user_container{
+    border: 1px solid #999999;
+    padding: 1rem 1rem;
+    width: 96%;
+
+    .review_header{
+        display: flex;
+        justify-content: space-between;
+
+        .review_restaurant{
+            display: flex;
+            gap: 20px;
+
+            img{
+                width: 50px;
+                height: 50px;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+
+            .restaurant_details{
+                p{
+                    margin: 5px 0;
+                    font-size: 14px;
+                    color: #999999;
+                }
+            }
+        }
+    }
+
+    .review_content{
+        .review{
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+
+            span{
+                background: #25ca77;
+                padding: 3px 8px;
+                color: #fff;
+            }
+
+            p{
+                margin: 2px 0;
+                font-family: 14px;
+                color: #999999;
+            }
+        }
+    }
+
+    .review_extras{
+        .icons{
+            margin-top: 15px;
+            display: flex;
+            gap: 20px;
+            
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

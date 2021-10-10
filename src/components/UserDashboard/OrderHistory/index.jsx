@@ -2,7 +2,7 @@ import React from 'react';
 
 import './orderHistory.scss';
 
-import image from '../../../Images/burgurking.jpg';
+import image from 'Images/burgurking.jpg';
 
 const OrderHistory = () => {
   return (

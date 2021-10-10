@@ -1,9 +1,20 @@
 import React from 'react'
+import Transaction from '../Transaction'
+
+import './transaction.scss'
 
 const Transactions = () => {
     return (
         <>
-            <h1>Transaction Component</h1>
+            <div className="transactions_container">
+                <div className="transactions_header">
+                    <h1>Payments</h1>
+                    <div className="filters_payment"></div>
+                </div>
+                <div className="transactions_content">
+                    <Transaction />
+                </div>
+            </div>
         </>
     )
 }
