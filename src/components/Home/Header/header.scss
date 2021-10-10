@@ -40,19 +40,22 @@
     }
 
     .icons {
-      display: flex;
-      padding-top: 10px;
-      height: 50px;
-      gap: 10px;
-
-      button {
-        border: none;
-        background: none;
-        font-size: 18px;
+      i{
+        cursor: pointer;
+        margin-left: .5rem;
+        height: 2.7rem;
+        line-height: 2.7rem;
+        width: 2.7rem;
+        text-align: center;
+        font-size: 1.2rem;
         color: $text_color;
+        border-radius: 50%;
+        background: #eee;
 
-        &:hover {
-          cursor: pointer;
+        &:hover{
+          color: $main_color;
+          background: $third_color;
+          transform: rotate(360deg);
         }
       }
     }
