@@ -1,0 +1,59 @@
+@import 'Common/Colors.scss';
+
+.hero_container {
+  .hero_wrapper {
+    .hero_slide {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding-top: 4.5rem;
+
+      .slider_content {
+        flex: 1 1 45rem;
+
+        span {
+          color: $third_color;
+          font-size: 2.3rem;
+        }
+
+        h3 {
+          color: $second_color;
+          font-size: 4rem;
+          margin: 0;
+        }
+
+        p {
+          color: $text_color;
+          font-size: 1rem;
+          padding: 0.5rem 0;
+          line-height: 1.5;
+        }
+
+        button{
+            margin-top: .5rem;
+            display: inline-block;
+            font-size: 1.2rem;
+            color: #fff;
+            background: $first_color;
+            border-radius: .5rem;
+            cursor: pointer;
+            padding: .8rem 3rem;
+            outline: none;
+            border: none;
+
+            &:hover{
+                background: $third_color;
+            }
+        }
+      }
+
+      .slider_image {
+        flex: 1 1 45rem;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
