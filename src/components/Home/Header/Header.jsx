@@ -7,6 +7,7 @@ import { useState } from "react";
 
 import SignIn from '../../SignIn'
 import SignUp from '../../SignUp'
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
@@ -31,15 +32,13 @@ const Header = () => {
           <div className="logo">
             <img src={image} alt="" />
           </div>
-          <div className="location">
-            <input
-              type="text"
-              name=""
-              id=""
-              placeholder="Search for restaurant"
-            />
-          </div>
           <div className="links">
+            <Link to="#" className="nav_link">Home</Link>
+            <Link to="#" className="nav_link">About</Link>
+            <Link to="#" className="nav_link">Restaurants</Link>
+            <Link to="#" className="nav_link">Foods</Link>
+          </div>
+          <div className="icons">
             <button onClick={() => popUpModal('Sign_In')}>Log in</button>
             <button onClick={() => popUpModal('Sign_Up')}>Sign up</button>
           </div>
