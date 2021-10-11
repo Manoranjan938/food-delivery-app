@@ -26,7 +26,7 @@ const About = () => {
             dicta perspiciatis, optio tenetur quos? Voluptate numquam dolorem
             maiores ea?
           </p>
-          <div className="icons-container">
+          <div className="icons_container">
             <div className="icons">
               <i className="fa fa-truck" aria-hidden="true"></i>
               <span>Instant Delivery</span>
