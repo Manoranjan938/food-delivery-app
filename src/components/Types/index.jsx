@@ -4,7 +4,7 @@ import './types.scss'
 
 const RestaurantTypes = () => {
     return (
-      <>
+      <section>
         <div className="type-container">
           <div className="type-wrapper">
             <div className="delivery nav active-type">
@@ -27,7 +27,7 @@ const RestaurantTypes = () => {
             </div>
           </div>
         </div>
-      </>
+      </section>
     );
 }
 

@@ -4,7 +4,7 @@ import './filter.scss'
 
 const HeaderFilter = () => {
   return (
-    <>
+    <section>
       <div className="filter-container">
         <div className="filter-wrapper">
           <div className="filter-item">
@@ -33,7 +33,7 @@ const HeaderFilter = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

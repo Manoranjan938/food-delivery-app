@@ -30,18 +30,18 @@ const Overview = () => {
               })}
             </div>
 
-            <section className="cuisines">
+            <div className="cuisines">
               <h3>Cuisines</h3>
               <div className="items">
                 <span>Burgur</span>
                 <span>Fast Food</span>
                 <span>Bevarages</span>
               </div>
-            </section>
-            <section className="more_info">
+            </div>
+            <div className="more_info">
               <h3>More Info</h3>
-            </section>
-            <section className="blogger">
+            </div>
+            <div className="blogger">
               <div className="texts">
                 <h1>Are you a food blogger?</h1>
                 <span>
@@ -55,29 +55,29 @@ const Overview = () => {
                   <i class="fa fa-caret-right" />
                 </button>
               </div>
-            </section>
+            </div>
           </div>
           <aside>
             <div className="map_direction_section">
-              <section className="call_section">
+              <div className="call_section">
                 <h2>Call</h2>
                 <span>+91 9348554715</span>
-              </section>
-              <section className="direction_section">
+              </div>
+              <div className="direction_section">
                 <h2>Direction</h2>
                 <p>
                   QSR - 1, 3rd Floor, Vega City Mall, Srinivas Industrial
                   Estate, Bannerghatta Road, Bangalore
                 </p>
-              </section>
-              <section className="btns">
+              </div>
+              <div className="btns">
                 <button>
                   <i className="fa fa-clone"></i>&nbsp;Copy
                 </button>
                 <button>
                   <i className="fa fa-share"></i>&nbsp;Direction
                 </button>
-              </section>
+              </div>
             </div>
           </aside>
         </div>

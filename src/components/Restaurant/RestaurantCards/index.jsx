@@ -14,7 +14,7 @@ const RestaurantCards = () => {
   });
 
   return (
-    <>
+    <section>
       <h1>{len} Restaurants</h1>
       <div className="restaurant-container">
         <div className="restaurant-wrapper">
@@ -23,7 +23,7 @@ const RestaurantCards = () => {
           })}
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

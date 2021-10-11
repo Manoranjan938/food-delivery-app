@@ -15,7 +15,7 @@ const RestaurantTabs = () => {
   }
 
     return (
-      <>
+      <section>
         <div className="tabs_container">
           <div className={tabs === 1 ? 'active' : 'tabs'} onClick={() => handleClick(1)}>
             <span>Overview</span>
@@ -39,7 +39,7 @@ const RestaurantTabs = () => {
           {tabs === 3 && <ReviewSection />}
           {tabs === 5 && <Photos />}
         </div>
-      </>
+      </section>
     );
 }
 

@@ -6,7 +6,7 @@ import './bioHeader.scss'
 
 const RestaurantBioHeader = () => {
   return (
-    <>
+    <section>
       <div className="bio-header-container">
         <div className="bio-header-wrapper">
           <div className="restaurant-image">
@@ -71,7 +71,7 @@ const RestaurantBioHeader = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

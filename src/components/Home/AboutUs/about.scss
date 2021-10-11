@@ -1,0 +1,31 @@
+@import 'Common/Colors.scss';
+
+.about{
+    .sub_heading{
+        text-align: center;
+        color: $third_color;
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .heading{
+        text-align: center;
+        color: $second_color;
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .row{
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+
+        .image{
+            flex: 1 1 45rem;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

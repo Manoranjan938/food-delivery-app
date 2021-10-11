@@ -1,9 +1,9 @@
 import React from 'react'
 import FoodTypes from '../FoodTypes'
 import Foods from '../Foods'
+import FoodCarts from '../FoodTempCart'
 
 import './foodSection.scss'
-import FoodCarts from '../FoodTempCart'
 
 const FoodSection = () => {
     return (
