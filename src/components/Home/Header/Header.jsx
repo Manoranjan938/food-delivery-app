@@ -23,13 +23,13 @@ const Header = () => {
             <img src={image} alt="" />
           </div>
           <div className="links">
-            <Link to="#" className="nav_link">
+            <Link to="/" className="nav_link">
               Home
             </Link>
             <Link to="#" className="nav_link">
               About
             </Link>
-            <Link to="#" className="nav_link">
+            <Link to="/restaurants" className="nav_link">
               Restaurants
             </Link>
             <Link to="#" className="nav_link">
