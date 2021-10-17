@@ -2,12 +2,12 @@ import React from 'react';
 
 import './adress.scss';
 
-const UserAddresses = () => {
+const UserAddresses = ({ custom }) => {
   return (
     <>
       <section className="address_container">
         <div className="address_header">
-          <h3>Manage Addressed</h3>
+          {custom === 'checkout' ? null : <h3>Manage Addressed</h3>}
         </div>
         <div className="address_content">
           <div className="address">
@@ -20,10 +20,16 @@ const UserAddresses = () => {
                 Plotno-161/Kulodaya Bhaban, Unnamed Road, Amrit Nagar, Jagamara,
                 Bhubaneswar, Odisha 751030,India
               </p>
-              <div className="links">
-                <span>Edit</span>
-                <span>Delete</span>
-              </div>
+              {custom === 'checkout' ? (
+                <div className="delivery_btn">
+                  <span>Deliver Here</span>
+                </div>
+              ) : (
+                <div className="links">
+                  <span>Edit</span>
+                  <span>Delete</span>
+                </div>
+              )}
             </div>
           </div>
 
@@ -37,10 +43,16 @@ const UserAddresses = () => {
                 Plotno-161/Kulodaya Bhaban, Unnamed Road, Amrit Nagar, Jagamara,
                 Bhubaneswar, Odisha 751030,India
               </p>
-              <div className="links">
-                <span>Edit</span>
-                <span>Delete</span>
-              </div>
+              {custom === 'checkout' ? (
+                <div className="delivery_btn">
+                  <span>Deliver Here</span>
+                </div>
+              ) : (
+                <div className="links">
+                  <span>Edit</span>
+                  <span>Delete</span>
+                </div>
+              )}
             </div>
           </div>
 
@@ -54,10 +66,16 @@ const UserAddresses = () => {
                 Plotno-161/Kulodaya Bhaban, Unnamed Road, Amrit Nagar, Jagamara,
                 Bhubaneswar, Odisha 751030,India
               </p>
-              <div className="links">
-                <span>Edit</span>
-                <span>Delete</span>
-              </div>
+              {custom === 'checkout' ? (
+                <div className="delivery_btn">
+                  <span>Deliver Here</span>
+                </div>
+              ) : (
+                <div className="links">
+                  <span>Edit</span>
+                  <span>Delete</span>
+                </div>
+              )}
             </div>
           </div>
         </div>

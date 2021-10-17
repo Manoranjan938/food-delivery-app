@@ -1,0 +1,75 @@
+@import 'Common/Colors.scss';
+
+.about{
+    .sub_heading{
+        text-align: center;
+        color: $third_color;
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .heading{
+        text-align: center;
+        color: $second_color;
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .row{
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+
+        .image{
+            flex: 1 1 45rem;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .content{
+            flex: 1 1 45rem;
+
+            h3{
+                color: $first_color;
+                font-size: 1.5rem;
+            }
+
+            p{
+                color: $text_color;
+                font: .8rem;
+                line-height: 1.5;
+            }
+
+            .icons_container{
+                display: flex;
+                gap: 1rem;
+                padding: .5rem 0;
+                margin: .5rem;
+
+                .icons{
+                    background: #eee;
+                    border-radius: .5rem;
+                    border: 1px solid rgba(0,0,0, .2);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+                    flex: 1 1 17rem;
+                    padding: .6rem .7rem;
+
+                    i{
+                        font-size: 1.7rem;
+                        color: $second_color;
+                    }
+
+                    span{
+                        font-size: 1rem;
+                        color: $text_color;
+                    }
+                }
+            }
+        }
+    }
+}

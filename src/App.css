@@ -1,14 +1,8 @@
 body{
+    padding: 2rem 9%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
-}
-
-section{
-    padding: 2rem 9%;
-}
-
-section:nth-child(even){
-    background: #eee;
+    background: #f7f2f1;
 }

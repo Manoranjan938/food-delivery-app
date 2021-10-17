@@ -6,7 +6,7 @@ import './foods.scss'
 const Foods = () => {
     return (
       <>
-        <section className="food_container">
+        <div className="food_container">
           <div className="food_wrapper">
             <div className="food_header">
               <h2>Order Online</h2>
@@ -21,7 +21,7 @@ const Foods = () => {
             </div>
             <SingleFood />
           </div>
-        </section>
+        </div>
       </>
     );
 }
