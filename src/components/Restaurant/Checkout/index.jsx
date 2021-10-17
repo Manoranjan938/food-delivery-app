@@ -4,6 +4,7 @@ import UserAddresses from 'components/UserDashboard/Addresses';
 
 import './checkout.scss';
 import image from 'Images/burgurking.jpg';
+import CheckoutPayment from 'components/CheckoutPayment/CheckoutPayment';
 
 const CheckoutFood = () => {
   return (
@@ -16,7 +17,8 @@ const CheckoutFood = () => {
             <UserAddresses custom="checkout" />
           </div>
           <div className="payment_details">
-            <h1>Choose a payment method</h1>
+            <h1>Payment</h1>
+            <CheckoutPayment />
           </div>
         </div>
         <div>
