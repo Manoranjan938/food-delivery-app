@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 
 import './checkoutPayment.scss';
+
 import { FaWallet, FaCreditCard } from 'react-icons/fa';
 import { FcMoneyTransfer } from 'react-icons/fc';
 import { GiBank } from 'react-icons/gi';
+
+import CheckoutWallet from 'components/CheckoutWallet/CheckoutWallet';
 
 const CheckoutPayment = () => {
   const [options, setOptions] = useState(1);
@@ -51,7 +54,7 @@ const CheckoutPayment = () => {
             </div>
           </div>
           <div className="payment_details">
-            <h1>Wallet</h1>
+            {options === 1 && <CheckoutWallet />}
           </div>
         </div>
       </section>
