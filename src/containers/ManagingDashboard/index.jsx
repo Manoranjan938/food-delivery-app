@@ -1,11 +1,13 @@
 import React from 'react'
 
-import Header from '../../components/Home/Header/Header';
+import DashboardHeader from 'components/DashboardHeader/DashboardHeader';
+import RestaurantMainDashboard from 'components/RestaurantDashboard/MainRestaurantPage/RestaurantMainDashboard';
 
 const ManageDashboard = () => {
     return (
       <>
-        <Header />
+        <DashboardHeader />
+        <RestaurantMainDashboard />
       </>
     );
 }
