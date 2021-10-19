@@ -4,6 +4,7 @@ import image from 'Images/logo.png';
 import { Link } from 'react-router-dom';
 
 import './sidebar.scss';
+import DashboardHeader from 'components/DashboardHeader/DashboardHeader';
 
 const DashboardSidebar = () => {
   return (
@@ -70,6 +71,9 @@ const DashboardSidebar = () => {
             </Link>
           </li>
         </ul>
+      </div>
+      <div className="contents">
+        <DashboardHeader />
       </div>
     </>
   );

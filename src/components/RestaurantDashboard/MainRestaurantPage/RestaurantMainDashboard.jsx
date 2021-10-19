@@ -5,9 +5,6 @@ const RestaurantMainDashboard = () => {
     return (
         <>
         <DashboardSidebar />
-            {/* <section className="dashboard_container">
-                <h1>Hello Dashboard</h1>
-            </section> */}
         </>
     )
 }
