@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom';
 
 import './sidebar.scss';
 import DashboardHeader from 'components/DashboardHeader/DashboardHeader';
+import DashboardCards from '../DashboardCards/DashboardCards';
+import IncomeAnalytics from '../IncomeAnalytics/IncomeAnalytics';
+import Orders from '../Orders/Orders';
 
 const DashboardSidebar = () => {
   return (
@@ -23,7 +26,7 @@ const DashboardSidebar = () => {
             <input type="text" name="" id="" placeholder="Search..." />
           </li>
           <li>
-            <Link>
+            <Link className="active">
               <i className="fa fa-tachometer"></i>
               <span className="links_name">Dashboard</span>
             </Link>
@@ -74,6 +77,9 @@ const DashboardSidebar = () => {
       </div>
       <div className="contents">
         <DashboardHeader />
+        <DashboardCards />
+        <IncomeAnalytics />
+        <Orders />
       </div>
     </>
   );
