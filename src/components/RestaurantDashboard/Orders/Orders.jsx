@@ -44,7 +44,7 @@ const Orders = () => {
                   <p>Burgur X 1,</p>
                   <p>Burgur X 1</p>
                   <button className="more_details">
-                    <Link to="/restaurant/order/order-description/order-id=12">
+                    <Link to="#">
                       See Details <i className="fa fa-chevron-right" />
                     </Link>
                   </button>

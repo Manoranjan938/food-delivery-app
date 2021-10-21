@@ -1,11 +1,11 @@
 import React from 'react'
 
-import RestaurantMainDashboard from 'components/RestaurantDashboard/MainRestaurantPage/RestaurantMainDashboard';
+import DashboardSidebar from 'components/RestaurantDashboard/Sidebar/Sidebar';
 
 const ManageDashboard = () => {
     return (
       <>
-        <RestaurantMainDashboard />
+        <DashboardSidebar />
       </>
     );
 }

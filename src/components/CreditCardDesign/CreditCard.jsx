@@ -5,7 +5,7 @@ import './creditCard.scss';
 import visa from 'Images/visa.png';
 import chip from 'Images/chip.png';
 import map from 'Images/map.png';
-import pattern from 'Images/pattern.png';
+//import pattern from 'Images/pattern.png';
 
 const CreditCard = () => {
   return (
