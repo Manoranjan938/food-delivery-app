@@ -1,11 +1,13 @@
 import React from 'react'
 
 import DashboardSidebar from 'components/RestaurantDashboard/Sidebar/Sidebar';
+import DashboardHeader from 'components/DashboardHeader/DashboardHeader';
 
 const ManageDashboard = () => {
     return (
       <>
-        <DashboardSidebar />
+        <DashboardSidebar select="dashboard" />
+        <DashboardHeader />
       </>
     );
 }

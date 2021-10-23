@@ -1,26 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import image from 'Images/logo.png';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './sidebar.scss';
-import DashboardHeader from 'components/DashboardHeader/DashboardHeader';
 import Dashboard from '../Dashboard/Dashboard';
 
-const DashboardSidebar = () => {
+const DashboardSidebar = ({select}) => {
 
-  const [option, setOption] = useState(1);
+  /* let {search} = useLocation();
 
-  let {search} = useLocation();
+  // useEffect(() => {
+  //   const query = new URLSearchParams(search);
+  //   const parameter = query.get('tab')
 
-  useEffect(() => {
-    const query = new URLSearchParams(search);
-    const parameter = query.get('tab')
-
-    if(parseInt(parameter) === 4){
-      setOption(parseInt(parameter));
-    }
-  }, [search])
+  //   if(parseInt(parameter) === 4){
+  //     setOption(parseInt(parameter));
+  //   }
+  // }, [search]) */
 
   return (
     <>
@@ -38,43 +35,43 @@ const DashboardSidebar = () => {
             <input type="text" name="" id="" placeholder="Search..." />
           </li>
           <li>
-            <Link to="#main" className="active">
+            <Link to="/restaurants/dashboard" className={select === "dashboard" ? "active" : null}>
               <i className="fa fa-tachometer"></i>
               <span className="links_name">Dashboard</span>
             </Link>
           </li>
           <li>
-            <Link to="#menu">
+            <Link to="/restaurants/dashboard/menu" className={select === "menu" ? "active" : null}>
               <i className="fa fa-book"></i>
               <span className="links_name">Menu</span>
             </Link>
           </li>
           <li>
-            <Link to="#drivers">
+            <Link to="/restaurants/dashboard/drivers" className={select === 'drivers' ? "active" : null}>
               <i className="fa fa-user"></i>
               <span className="links_name">Drivers</span>
             </Link>
           </li>
           <li>
-            <Link to="#orders">
+            <Link to="/restaurants/dashboard/orders">
               <i className="fa fa-list-alt"></i>
               <span className="links_name">Orders</span>
             </Link>
           </li>
           <li>
-            <Link to="#setting">
+            <Link to="/restaurants/dashboard/setting">
               <i className="fa fa-cog"></i>
               <span className="links_name">Setting</span>
             </Link>
           </li>
           <li>
-            <Link to="#reports">
+            <Link to="/restaurants/dashboard/reports">
               <i className="fa fa-exclamation-circle"></i>
               <span className="links_name">Reports</span>
             </Link>
           </li>
           <li>
-            <Link to="#share">
+            <Link to="/restaurants/dashboard/share">
               <i className="fa fa-share-alt"></i>
               <span className="links_name">Share</span>
             </Link>
@@ -82,8 +79,7 @@ const DashboardSidebar = () => {
         </ul>
       </div>
       <div className="contents">
-        <DashboardHeader />
-        {option === 1 && <Dashboard /> }
+        {select === "dashboard" && <Dashboard /> }
       </div>
     </>
   );

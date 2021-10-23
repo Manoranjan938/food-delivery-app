@@ -1,4 +1,6 @@
 import Checkout from 'containers/Checkout';
+import RestaurantMenu from 'containers/DashboardMenu';
+import RestaurantDrivers from 'containers/RestaurantDrivers';
 import React from 'react'
 import { Route } from 'react-router-dom'
 import Home from '../Home';
@@ -18,6 +20,8 @@ const RouterFile = () => {
         <Route exact path="/profile" component={Profile} />
         <Route exact path="/user/me" component={UserDashboardRoute} />
         <Route exact path="/restaurants/dashboard" component={ManageDashboard} />
+        <Route exact path="/restaurants/dashboard/menu" component={RestaurantMenu} />
+        <Route exact path="/restaurants/dashboard/drivers" component={RestaurantDrivers} />
       </>
     );
 }
