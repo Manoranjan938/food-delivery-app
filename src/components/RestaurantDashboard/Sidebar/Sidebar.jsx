@@ -11,10 +11,6 @@ const DashboardSidebar = () => {
 
   const [option, setOption] = useState(1);
 
-  const chooseDashboard = (index) => {
-    setOption(index);
-  }
-
   let {search} = useLocation();
 
   useEffect(() => {
@@ -41,44 +37,44 @@ const DashboardSidebar = () => {
             <i className="fa fa-search"></i>
             <input type="text" name="" id="" placeholder="Search..." />
           </li>
-          <li onClick={() => chooseDashboard(1)}>
-            <Link to="#" className={option === 1 ? "active" : null}>
+          <li>
+            <Link to="#main" className="active">
               <i className="fa fa-tachometer"></i>
               <span className="links_name">Dashboard</span>
             </Link>
           </li>
-          <li onClick={() => chooseDashboard(2)}>
-            <Link to="#" className={option === 2 ? "active" : null}>
+          <li>
+            <Link to="#menu">
               <i className="fa fa-book"></i>
               <span className="links_name">Menu</span>
             </Link>
           </li>
-          <li onClick={() => chooseDashboard(3)}>
-            <Link to="#" className={option === 3 ? "active" : null}>
+          <li>
+            <Link to="#drivers">
               <i className="fa fa-user"></i>
               <span className="links_name">Drivers</span>
             </Link>
           </li>
-          <li onClick={() => chooseDashboard(4)}>
-            <Link to="#" className={option === 4 ? "active" : null}>
+          <li>
+            <Link to="#orders">
               <i className="fa fa-list-alt"></i>
               <span className="links_name">Orders</span>
             </Link>
           </li>
-          <li onClick={() => chooseDashboard(5)}>
-            <Link to="#" className={option === 5 ? "active" : null}>
+          <li>
+            <Link to="#setting">
               <i className="fa fa-cog"></i>
               <span className="links_name">Setting</span>
             </Link>
           </li>
-          <li onClick={() => chooseDashboard(6)}>
-            <Link to="#" className={option === 6 ? "active" : null}>
+          <li>
+            <Link to="#reports">
               <i className="fa fa-exclamation-circle"></i>
               <span className="links_name">Reports</span>
             </Link>
           </li>
-          <li onClick={() => chooseDashboard(7)}>
-            <Link to="#" className={option === 7 ? "active" : null}>
+          <li>
+            <Link to="#share">
               <i className="fa fa-share-alt"></i>
               <span className="links_name">Share</span>
             </Link>

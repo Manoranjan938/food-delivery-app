@@ -1,0 +1,122 @@
+@import "Common/Colors.scss";
+
+.order_card {
+    background: #efefef;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 5px 5px rgba(0, 0, 0, 0.1);
+
+    .order_card_header {
+      display: flex;
+      justify-content: space-between;
+
+      h3 {
+        margin: 0;
+        font-size: 14px;
+        text-transform: uppercase;
+
+        span {
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .order_card_body {
+      display: flex;
+      justify-content: space-between;
+
+      .order_details {
+        display: flex;
+        gap: 10px;
+
+        .order_image {
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+
+        .order_items {
+          p {
+            margin: 3px 0;
+            font-size: 14px;
+            font-weight: 600;
+          }
+
+          .more_details {
+            margin-top: 10px;
+            width: 130px;
+            height: 30px;
+            font-size: 14px;
+            font-weight: 500;
+            background: $second_color;
+            border: none;
+            color: $main_color;
+
+            &:hover {
+              cursor: pointer;
+              transition: all 3s ease;
+
+              i {
+                margin-left: 5px;
+              }
+            }
+
+            a{
+              color: $main_color;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
+    .order_card_footer {
+      display: flex;
+      justify-content: space-between;
+
+      h3 {
+        margin: 5px 0;
+        font-size: 14px;
+        color: $first_color;
+      }
+
+      span {
+        font-size: 13px;
+        color: $first_color;
+      }
+
+      .btns {
+        .reject {
+          width: 100px;
+          height: 30px;
+          background: $first_color;
+          border: 1px solid $first_color;
+          color: $main_color;
+          border-radius: 5px;
+          outline: none;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .confirm {
+          width: 100px;
+          height: 30px;
+          margin-left: 10px;
+          background: $third_color;
+          border: 1px solid $third_color;
+          outline: none;
+          color: $main_color;
+          border-radius: 5px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
