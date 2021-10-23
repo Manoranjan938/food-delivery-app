@@ -7,6 +7,9 @@ import { FcMoneyTransfer } from 'react-icons/fc';
 import { GiBank } from 'react-icons/gi';
 
 import CheckoutWallet from 'components/CheckoutWallet/CheckoutWallet';
+import NewCards from 'components/CheckoutNewCards/NewCards';
+import UPI from 'components/CheckoutUPI/UPI';
+import NetBanking from 'components/CheckoutNetBanking/NetBanking';
 
 const CheckoutPayment = () => {
   const [options, setOptions] = useState(1);
@@ -55,6 +58,9 @@ const CheckoutPayment = () => {
           </div>
           <div className="payment_details">
             {options === 1 && <CheckoutWallet />}
+            {options === 2 && <NewCards />}
+            {options === 3 && <UPI />}
+            {options === 4 && <NetBanking />}
           </div>
         </div>
       </section>

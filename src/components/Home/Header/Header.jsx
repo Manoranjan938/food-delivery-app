@@ -2,7 +2,7 @@ import React from 'react';
 
 import './header.scss';
 
-import image from '../../../Images/logo.png';
+import image from 'Images/logo.png';
 import { useState } from 'react';
 
 import SignIn from '../../SignIn';

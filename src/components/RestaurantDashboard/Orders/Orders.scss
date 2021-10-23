@@ -1,0 +1,62 @@
+@import 'Common/Colors.scss';
+
+.order_container {
+  margin-top: 10px;
+  margin-left: 10px;
+  background: #fff;
+  margin-right: 20px;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+
+  .order_header {
+    display: flex;
+    justify-content: space-between;
+
+    .order_status_tabs {
+      display: flex;
+      gap: 20px;
+
+      &:hover{
+        cursor: pointer;
+      }
+
+      span {
+        font-size: 18px;
+        font-weight: 600;
+        color: $first_color;
+      }
+
+      .active {
+        border-bottom: 3px solid $third_color;
+      }
+    }
+
+    .display_icons {
+      display: flex;
+      gap: 10px;
+
+      i {
+        background: $first_color;
+        padding: 8px;
+        color: $main_color;
+        border-radius: 7px;
+        font-size: 16px;
+
+        &:hover{
+          cursor: pointer;
+        }
+      }
+
+      #select {
+        background: $third_color;
+      }
+    }
+  }
+
+  .order_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+}
