@@ -1,3 +1,4 @@
+import AdminDashboard from 'containers/AdminDashboard';
 import Checkout from 'containers/Checkout';
 import RestaurantMenu from 'containers/DashboardMenu';
 import RestaurantDrivers from 'containers/RestaurantDrivers';
@@ -22,6 +23,7 @@ const RouterFile = () => {
         <Route exact path="/restaurants/dashboard" component={ManageDashboard} />
         <Route exact path="/restaurants/dashboard/menu" component={RestaurantMenu} />
         <Route exact path="/restaurants/dashboard/drivers" component={RestaurantDrivers} />
+        <Route exact path="/admin/dashboard/" component={AdminDashboard} />
       </>
     );
 }
