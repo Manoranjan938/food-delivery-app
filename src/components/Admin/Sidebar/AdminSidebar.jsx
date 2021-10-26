@@ -27,8 +27,14 @@ const AdminSidebar = () => {
           </li>
           <li>
             <Link to="/admin/dashboard/menu">
-              <i className="fa fa-book"></i>
+              <i className="fa fa-home"></i>
               <span className="links_name">Restaurants</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/admin/dashboard/menu">
+              <i className="fa fa-book"></i>
+              <span className="links_name">Menu</span>
             </Link>
           </li>
           <li>
