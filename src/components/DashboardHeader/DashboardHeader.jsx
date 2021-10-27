@@ -10,7 +10,7 @@ const DashboardHeader = () => {
       <div className="header_container">
         <div className="navbar">
           <div className="notification">
-            <i class="fa fa-bell-o" />
+            <i className="fa fa-bell-o" />
             {/* <span>9+</span> */}
           </div>
           <div className="user">

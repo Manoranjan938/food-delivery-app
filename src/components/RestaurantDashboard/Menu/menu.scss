@@ -1,0 +1,110 @@
+@import 'Common/Colors.scss';
+
+.menu_container {
+  padding-top: 60px;
+  margin-left: 150px;
+  width: 95%;
+
+  .menu_header {
+    display: flex;
+    justify-content: space-between;
+
+    .filter_menus {
+      width: 240px;
+      height: 40px;
+
+      .filter_menu {
+        width: 100%;
+        height: 100%;
+        border: 1px solid $second_color;
+        padding: 0 10px;
+        border-radius: 12px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+
+    .menu_btns {
+      width: 240px;
+      height: 40px;
+
+      .search {
+        width: 40px;
+        height: 100%;
+        border: 1px solid $third_color;
+        border-radius: 12px;
+        color: $third_color;
+        font-size: 18px;
+        background: $main_color;
+        font-weight: 600;
+      }
+
+      .new_menu {
+        width: 180px;
+        height: 100%;
+        margin-left: 10px;
+        border: 1px solid $second_color;
+        border-radius: 12px;
+        color: $main_color;
+        font-size: 14px;
+        background: $second_color;
+        font-weight: 600;
+        cursor: pointer;
+
+        a {
+          text-decoration: none;
+          color: $main_color;
+
+          i {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .menu_content {
+    background: $main_color;
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+
+    .menu_content_header{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        .menu_tabs_option{
+            display: flex;
+            gap: 20px;
+
+            span{
+                font-size: 16px;
+                font-weight: 600;
+                color: $first_color;
+                padding: 5px 10px;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            .active{
+                border-bottom: 4px solid $third_color;
+            }
+        }
+
+        .category_link{
+            text-decoration: none;
+            color: $first_color;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+
+    .menu_wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+  }
+}
