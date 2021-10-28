@@ -1,4 +1,5 @@
 import AdminDashboard from 'containers/AdminDashboard';
+import Categories from 'containers/Categories';
 import Checkout from 'containers/Checkout';
 import RestaurantMenu from 'containers/DashboardMenu';
 import RestaurantDrivers from 'containers/RestaurantDrivers';
@@ -22,6 +23,7 @@ const RouterFile = () => {
         <Route exact path="/user/me" component={UserDashboardRoute} />
         <Route exact path="/restaurants/dashboard" component={ManageDashboard} />
         <Route exact path="/restaurants/menu" component={RestaurantMenu} />
+        <Route exact path="/menu/category/lists" component={Categories} />
         <Route exact path="/restaurants/drivers" component={RestaurantDrivers} />
         <Route exact path="/admin/dashboard/" component={AdminDashboard} />
       </>
