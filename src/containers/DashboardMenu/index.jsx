@@ -8,7 +8,6 @@ const RestaurantMenu = () => {
         <>
             <DashboardHeader />
             <DashboardSidebar select="menu" />
-            <Menu />
         </>
     )
 }

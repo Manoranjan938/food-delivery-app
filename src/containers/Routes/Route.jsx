@@ -21,8 +21,8 @@ const RouterFile = () => {
         <Route exact path="/profile" component={Profile} />
         <Route exact path="/user/me" component={UserDashboardRoute} />
         <Route exact path="/restaurants/dashboard" component={ManageDashboard} />
-        <Route exact path="/restaurants/dashboard/menu" component={RestaurantMenu} />
-        <Route exact path="/restaurants/dashboard/drivers" component={RestaurantDrivers} />
+        <Route exact path="/restaurants/menu" component={RestaurantMenu} />
+        <Route exact path="/restaurants/drivers" component={RestaurantDrivers} />
         <Route exact path="/admin/dashboard/" component={AdminDashboard} />
       </>
     );

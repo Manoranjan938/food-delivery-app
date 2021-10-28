@@ -10,9 +10,7 @@ const Menu = () => {
       <div className="menu_container">
         <div className="menu_header">
           <div className="filter_menus">
-            <select className="filter_menu" name="options">
-              <option value="">Filter</option>
-            </select>
+            <input type="text" name="" id="" placeholder="Filter..." className="filter_menu"  />
           </div>
           <div className="menu_btns">
             <button className="search">

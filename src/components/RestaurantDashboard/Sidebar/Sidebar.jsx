@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 import './sidebar.scss';
 import Dashboard from '../Dashboard/Dashboard';
+import Menu from '../Menu/Menu';
 
 const DashboardSidebar = ({select}) => {
 
@@ -41,37 +42,37 @@ const DashboardSidebar = ({select}) => {
             </Link>
           </li>
           <li>
-            <Link to="/restaurants/dashboard/menu" className={select === "menu" ? "active" : null}>
+            <Link to="/restaurants/menu" className={select === "menu" ? "active" : null}>
               <i className="fa fa-book"></i>
               <span className="links_name">Menu</span>
             </Link>
           </li>
           <li>
-            <Link to="/restaurants/dashboard/drivers" className={select === 'drivers' ? "active" : null}>
+            <Link to="/restaurants/drivers" className={select === 'drivers' ? "active" : null}>
               <i className="fa fa-user"></i>
               <span className="links_name">Drivers</span>
             </Link>
           </li>
           <li>
-            <Link to="/restaurants/dashboard/orders">
+            <Link to="/restaurants/orders">
               <i className="fa fa-list-alt"></i>
               <span className="links_name">Orders</span>
             </Link>
           </li>
           <li>
-            <Link to="/restaurants/dashboard/setting">
+            <Link to="/restaurants/setting">
               <i className="fa fa-cog"></i>
               <span className="links_name">Setting</span>
             </Link>
           </li>
           <li>
-            <Link to="/restaurants/dashboard/reports">
+            <Link to="/restaurants/reports">
               <i className="fa fa-exclamation-circle"></i>
               <span className="links_name">Reports</span>
             </Link>
           </li>
           <li>
-            <Link to="/restaurants/dashboard/share">
+            <Link to="/restaurants/share">
               <i className="fa fa-share-alt"></i>
               <span className="links_name">Share</span>
             </Link>
@@ -80,6 +81,7 @@ const DashboardSidebar = ({select}) => {
       </div>
       <div className="contents">
         {select === "dashboard" && <Dashboard /> }
+        {select === "menu" && <Menu />}
       </div>
     </>
   );

@@ -1,8 +1,8 @@
 @import 'Common/Colors.scss';
 
 .menu_container {
-  padding-top: 60px;
-  margin-left: 150px;
+  margin-top: 60px;
+  margin-left: 10px;
   width: 95%;
 
   .menu_header {
@@ -53,7 +53,11 @@
 
         a {
           text-decoration: none;
-          color: $main_color;
+          color: $main_color!important;
+
+          &:hover{
+            cursor: pointer;
+          }
 
           i {
             margin-right: 10px;
@@ -68,37 +72,37 @@
     border-radius: 12px;
     padding: 1rem 1.5rem;
 
-    .menu_content_header{
+    .menu_content_header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      .menu_tabs_option {
         display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
+        gap: 20px;
 
-        .menu_tabs_option{
-            display: flex;
-            gap: 20px;
+        span {
+          font-size: 16px;
+          font-weight: 600;
+          color: $first_color;
+          padding: 5px 10px;
 
-            span{
-                font-size: 16px;
-                font-weight: 600;
-                color: $first_color;
-                padding: 5px 10px;
-
-                &:hover{
-                    cursor: pointer;
-                }
-            }
-
-            .active{
-                border-bottom: 4px solid $third_color;
-            }
+          &:hover {
+            cursor: pointer !important;
+          }
         }
 
-        .category_link{
-            text-decoration: none;
-            color: $first_color;
-            font-size: 16px;
-            font-weight: 600;
+        .active {
+          border-bottom: 4px solid $third_color;
         }
+      }
+
+      .category_link {
+        text-decoration: none;
+        color: $first_color;
+        font-size: 16px;
+        font-weight: 600;
+      }
     }
 
     .menu_wrapper {
