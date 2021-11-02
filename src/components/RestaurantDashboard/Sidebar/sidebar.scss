@@ -40,80 +40,54 @@
     line-height: 50px;
     transform: translateX(-50%);
 
-    &:hover{
-        cursor: pointer;
+    &:hover {
+      cursor: pointer;
     }
   }
 
-  ul {
-    margin-top: 10px;
+  .tab_links {
+    margin: 20px 0;
 
-    li {
-      position: relative;
-      height: 50px;
-      width: 100%;
-      margin: 10px -25px;
-      list-style: none;
-      line-height: 50px;
+    .tabs {
+      text-decoration: none;
+      color: $main_color;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 20px;
+      border-radius: 12px;
 
-      a {
-        color: $main_color;
+      &:hover {
+        background: $third_color;
+        color: $first_color;
+      }
+
+      .icon_title {
         display: flex;
-        align-items: center;
-        text-decoration: none;
-        transition: all 0.4s ease;
+        gap: 15px;
+      }
+    }
+
+    .dropdown_link {
+      color: $main_color;
+      text-decoration: none;
+
+      .dropdown {
+        margin: 15px 10px;
+        padding: 10px 15px;
         border-radius: 12px;
+        display: flex;
+        gap: 10px;
 
         &:hover {
-          color: $first_color;
           background: $third_color;
+          color: $first_color;
         }
-      }
-
-      .active{
-        color: $first_color;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        transition: all 0.4s ease;
-        border-radius: 12px;
-        background: $third_color;
-      }
-
-      i {
-        height: 50px;
-        min-width: 50px;
-        border-radius: 12px;
-        line-height: 50px;
-        text-align: center;
-      }
-
-      .fa-search {
-        position: absolute;
-        z-index: 99;
-        color: $main_color;
-        font-size: 20px;
-      }
-
-      input {
-        position: absolute;
-        height: 100%;
-        width: 80%;
-        left: 0;
-        top: 0;
-        border-radius: 12px;
-        outline: none;
-        border: none;
-        background: #1d1b31;
-        padding-left: 40px;
-        font-size: 18px;
-        color: $main_color;
       }
     }
   }
 }
 
-.contents{
+.contents {
   position: absolute;
   height: 100%;
   width: calc(100% - 250px);
