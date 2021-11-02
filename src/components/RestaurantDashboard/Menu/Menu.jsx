@@ -33,7 +33,7 @@ const Menu = () => {
               <span>In - Active</span>
             </div>
             <div>
-              <Link to="/menu/category/lists" className="category_link">
+              <Link to="/restaurants/menu/category/lists" className="category_link">
                 <i className="fa fa-chevron-left" /> Category List
               </Link>
             </div>

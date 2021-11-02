@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 
 import './sidebar.scss';
 
-const SubMenu = ({ item }) => {
+const SubMenu = ({ item, selection }) => {
   const [subnav, setSubnav] = useState(false);
 
   const showSubnav = () => setSubnav(!subnav);
   return (
     <>
-      <Link to={item.path} className="tabs" onClick={item.subNav && showSubnav}>
+      <Link to={item.path} className={item.name === selection ? "active" : "tabs"} onClick={item.subNav && showSubnav}>
         <div className="icon_title">
           {item.icon}
           <span className="links_name">{item.title}</span>

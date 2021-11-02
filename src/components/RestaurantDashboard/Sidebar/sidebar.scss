@@ -84,6 +84,21 @@
         }
       }
     }
+
+    .active{
+      text-decoration: none;
+      color: $first_color;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 20px;
+      border-radius: 12px;
+      background: $third_color;
+
+      .icon_title {
+        display: flex;
+        gap: 15px;
+      }
+    }
   }
 }
 

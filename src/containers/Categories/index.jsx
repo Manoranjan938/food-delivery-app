@@ -6,7 +6,7 @@ const Categories = () => {
     return (
         <>
             <DashboardHeader />
-            <DashboardSidebar />
+            <DashboardSidebar select="categories" />
         </>
     )
 }

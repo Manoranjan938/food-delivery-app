@@ -33,7 +33,7 @@ const DashboardSidebar = ({ select }) => {
         {SidebarData.map((item, index) => {
           return (
             <div className="tab_links" key={index}>
-              <SubMenu item={item} />
+              <SubMenu item={item} selection={select} />
             </div>
           );
         })}
