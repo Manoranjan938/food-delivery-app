@@ -1,0 +1,63 @@
+@import 'Common/Colors.scss';
+
+.category_container {
+  padding-top: 50px;
+
+  .category_headers {
+    .header_contents {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 30px;
+
+      .search_category {
+        display: flex;
+        gap: 10px;
+        border: 1px solid $second_color;
+        padding: 10px 14px;
+        border-radius: 12px;
+
+        input {
+          border: none;
+          background: none;
+          outline: none;
+          font-size: 13px;
+          font-weight: 600;
+        }
+      }
+
+      .category_btns {
+        display: flex;
+        gap: 10px;
+
+        button {
+          padding: 0 15px;
+          border: 1px solid $second_color;
+          border-radius: 6px;
+          outline: none;
+          background: $second_color;
+          color: $main_color;
+
+          i {
+            margin-right: 4px;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: $main_color;
+        }
+      }
+    }
+  }
+
+  .category_content {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+}

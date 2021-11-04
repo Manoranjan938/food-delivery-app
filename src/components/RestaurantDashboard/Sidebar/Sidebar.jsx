@@ -7,6 +7,7 @@ import Dashboard from '../Dashboard/Dashboard';
 import Menu from '../Menu/Menu';
 import { SidebarData } from './SidebarData';
 import SubMenu from './SubMenu';
+import FoodCategory from '../FoodCategory/FoodCategory';
 
 const DashboardSidebar = ({ select }) => {
   /* let {search} = useLocation();
@@ -41,6 +42,7 @@ const DashboardSidebar = ({ select }) => {
       <div className="contents">
         {select === 'dashboard' && <Dashboard />}
         {select === 'menu' && <Menu />}
+        {select === 'categories' && <FoodCategory />}
       </div>
     </>
   );

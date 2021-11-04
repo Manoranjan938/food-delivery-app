@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import './sidebar.scss';
@@ -6,7 +6,9 @@ import './sidebar.scss';
 const SubMenu = ({ item, selection }) => {
   const [subnav, setSubnav] = useState(false);
 
-  const showSubnav = () => setSubnav(!subnav);
+  const showSubnav = () => {
+    setSubnav(!subnav);
+  }
   return (
     <>
       <Link to={item.path} className={item.name === selection ? "active" : "tabs"} onClick={item.subNav && showSubnav}>
