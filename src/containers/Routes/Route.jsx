@@ -4,6 +4,7 @@ import Checkout from 'containers/Checkout';
 import RestaurantMenu from 'containers/DashboardMenu';
 import NewCategoryContainer from 'containers/NewCategory';
 import RestaurantDrivers from 'containers/RestaurantDrivers';
+import Setting from 'containers/Settings';
 import React from 'react'
 import { Route } from 'react-router-dom'
 import Home from '../Home';
@@ -27,6 +28,7 @@ const RouterFile = () => {
         <Route exact path="/restaurants/menu/category/lists" component={Categories} />
         <Route exact path="/restaurants/menu/new_category" component={NewCategoryContainer} />
         <Route exact path="/restaurants/drivers" component={RestaurantDrivers} />
+        <Route exact path="/restaurants/setting" component={Setting} />
         <Route exact path="/admin/dashboard/" component={AdminDashboard} />
       </>
     );

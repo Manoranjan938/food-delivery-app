@@ -9,6 +9,7 @@ import { SidebarData } from './SidebarData';
 import SubMenu from './SubMenu';
 import FoodCategory from '../FoodCategory/FoodCategory';
 import NewCategory from 'components/NewCategory/NewCategory';
+import SettingsComponent from 'components/Setting/SettingsComponent';
 
 const DashboardSidebar = ({ select }) => {
   /* let {search} = useLocation();
@@ -45,6 +46,7 @@ const DashboardSidebar = ({ select }) => {
         {select === 'menu' && <Menu />}
         {select === 'categories' && <FoodCategory />}
         {select === 'new_categories' && <NewCategory />}
+        {select === 'settings' && <SettingsComponent />}
       </div>
     </>
   );

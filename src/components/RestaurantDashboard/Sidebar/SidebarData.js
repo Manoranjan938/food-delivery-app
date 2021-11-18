@@ -8,11 +8,17 @@ export const SidebarData = [
   {
     name: 'menu',
     title: 'Menu',
-    path: '/restaurants/menu',
+    path: '#',
     icon: <i className="fa fa-book" />,
     iconClosed: <i className="fa fa-caret-down" />,
     iconOpened: <i className="fa fa-caret-up" />,
     subNav: [
+      {
+        name: 'menu',
+        title: 'All Menus',
+        path: '/restaurants/menu',
+        icon: <i className="fa fa-eraser" />,
+      },
       {
         name: 'categories',
         title: 'Categories',
@@ -30,12 +36,17 @@ export const SidebarData = [
   {
     name: 'orders',
     title: 'Orders',
-    path: '/restaurants/orders',
+    path: '#',
     icon: <i className="fa fa-list-alt" />,
     iconClosed: <i className="fa fa-caret-down" />,
     iconOpened: <i className="fa fa-caret-up" />,
     subNav: [
       {
+        name: 'orders ',
+        title: 'Orders',
+        path: '/restaurants/orders',
+        icon: <i className="fa fa-eraser" />,
+      },{
         name: 'order details',
         title: 'Order Details',
         path: '/restaurants/menu/categories',
@@ -50,7 +61,7 @@ export const SidebarData = [
     ],
   },
   {
-    name: 'setting',
+    name: 'settings',
     title: 'Setting',
     path: '/restaurants/setting',
     icon: <i className="fa fa-cog" />,
