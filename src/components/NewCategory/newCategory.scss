@@ -1,0 +1,21 @@
+@import 'Common/Colors.scss';
+
+.new_category_container {
+  margin-top: 50px;
+
+  .fields {
+    width: 400px;
+    margin: 10% auto;
+    padding: 0.6rem 1rem;
+    background: #fff;
+    border-radius: 12px;
+
+    h4 {
+      margin: 10px 0;
+    }
+
+    .text_field {
+      margin: 6px 0;
+    }
+  }
+}
